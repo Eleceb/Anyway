@@ -1,0 +1,23 @@
+/* Create two equal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 50%;
+    padding-right: 10px;
+}
+
+/* Right column */
+.rightcolumn {
+    float: right;
+    width: 50%;
+    background-color: #f1f1f1;
+    padding-left: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}

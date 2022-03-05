@@ -1,0 +1,32 @@
+/* Create three equal columns that floats next to each other */
+/* First colomn */
+.firstcolumn {
+    float: left;
+    width: 33.33%;
+    padding-right: 5px;
+}
+
+/* Second column */
+.secondcolumn {
+    float: left;
+    width: 33.33%;
+    background-color: #f1f1f1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Third column */
+.thirdcolumn {
+    float: right;
+    width: 33.33%;
+    background-color: #f1f1f1;
+    padding-left: 5px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .firstcolumn, .secondcolumn, .thirdcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
